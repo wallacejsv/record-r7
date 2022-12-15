@@ -18,7 +18,6 @@ export const Home = () => {
             return response.json();
         })
         .then(function(myJson) {
-            console.log(myJson.data);
             setUsers(myJson.data);
         });
     }
